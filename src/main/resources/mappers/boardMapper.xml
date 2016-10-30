@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.board.practice.mapper.boardMapper">
+
+	<insert id="insertBoard">
+		INSERT INTO board(
+			title, content, writer, date
+		) VALUES(
+			#{title}, #{content}, #{writer}, NOW()
+		)
+	</insert>
+	
+	<select id="listBoard" resultType="BoardVO">
+		SELECT * FROM board
+			ORDER BY bno DESC
+	</select>
+	
+	<select id="selectBoard" resultType="BoardVO">
+		SELECT * FROM board
+			WHERE bno = #{bno}
+	</select>
+	
+	<select id="maxBno" resultType="Integer">
+		SELECT MAX(bno) from board
+	</select>
+	
+	<select id="minBno" resultType="Integer">
+		SELECT MIN(bno) from board
+	</select>
+	
+	<delete id="deleteBoard">
+		DELETE FROM board WHERE bno=#{bno}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
