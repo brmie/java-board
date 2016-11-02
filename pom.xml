@@ -167,40 +167,38 @@
 		
 		<!-- For Heroku -->
 	    <dependency>
-            <groupId>com.github.ryanbrainard</groupId>
-            <artifactId>richsobjects-core</artifactId>
-            <version>${com.github.ryanbrainard.richsobjects.version}</version>
-        </dependency>
+		    <groupId>com.github.ryanbrainard</groupId>
+		    <artifactId>richsobjects-core</artifactId>
+		    <version>0.2-BETA</version>
+		</dependency>
+
         <dependency>
-            <groupId>com.github.ryanbrainard</groupId>
-            <artifactId>richsobjects-api-jersey-client</artifactId>
-            <version>${com.github.ryanbrainard.richsobjects.version}</version>
-        </dependency>
+		    <groupId>com.github.ryanbrainard</groupId>
+		    <artifactId>richsobjects-api-jersey-client</artifactId>
+		    <version>0.2-BETA</version>
+		</dependency>
+
         <dependency>
-            <groupId>com.github.ryanbrainard</groupId>
-            <artifactId>richsobjects-cache-memcached</artifactId>
-            <version>${com.github.ryanbrainard.richsobjects.version}</version>
-        </dependency>
+		    <groupId>com.github.ryanbrainard</groupId>
+		    <artifactId>richsobjects-cache-memcached</artifactId>
+		    <version>0.2-BETA</version>
+		</dependency>
+
+        
         <dependency>
-            <groupId>com.force.sdk</groupId>
-            <artifactId>force-oauth</artifactId>
-            <version>${com.force.sdk.version}</version>
-        </dependency>
+		    <groupId>com.force.sdk</groupId>
+		    <artifactId>force-oauth</artifactId>
+		    <version>22.0.9-BETA</version>
+		</dependency>
         <dependency>
-            <groupId>com.force.sdk</groupId>
-            <artifactId>force-springsecurity</artifactId>
-            <version>${com.force.sdk.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${org.slf4j.version}</version>
-            <scope>runtime</scope>
-        </dependency>
+		    <groupId>com.force.sdk</groupId>
+		    <artifactId>force-springsecurity</artifactId>
+		    <version>22.0.9-BETA</version>
+		</dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>${org.slf4j.version}</version>
+            <version>${org.slf4j-version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
