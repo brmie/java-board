@@ -1,6 +1,7 @@
-/.idea
+/target
 /.classpath
 /.project
 /.settings
-/target
+/tomcat.*
+/.idea
 /*.iml
