@@ -2,8 +2,6 @@ package com.board.practice.domain;
 
 import java.util.Date;
 
-import org.springframework.stereotype.Repository;
-
 public class BoardVO {
 	private int bno;
 	private String title;
