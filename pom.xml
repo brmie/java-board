@@ -33,6 +33,27 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 		
+		<!-- Security -->
+		<dependency>
+	        <groupId>org.springframework.security</groupId>
+	        <artifactId>spring-security-web</artifactId>
+	        <version>${org.springframework-version}</version>
+	    </dependency>
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-config</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- CGLib --> 
+		<dependency>
+		     <groupId>cglib</groupId>
+		     <artifactId>cglib</artifactId>
+		     <version>3.1</version>
+		     <type>jar</type>
+		     <scope>compile</scope>
+		</dependency>
+		
 		<!-- db 연동 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
