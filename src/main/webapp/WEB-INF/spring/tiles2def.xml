@@ -5,24 +5,24 @@
 >
 
 <tiles-definitions>
-	<definition name="baseLayout" template="/views/template/template.jsp">
-		<put-attribute name="header" value="/views/template/header.jsp"></put-attribute>
-		<put-attribute name="footer" value="/views/template/footer.jsp"></put-attribute>
+	<definition name="baseLayout" template="/WEB-INF/views/template/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/template/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"></put-attribute>
 	</definition>
 	
 	<definition name="main" extends="baseLayout">
-		<put-attribute name="body" value="/views/main.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
 	</definition>
 	<definition name="insertForm" extends="baseLayout">
-		<put-attribute name="body" value="/views/board/write.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/views/board/write.jsp"/>
 	</definition>
 	<definition name="list" extends="baseLayout">
-		<put-attribute name="body" value="/views/board/list.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/views/board/list.jsp"/>
 	</definition>
 	<definition name="view" extends="baseLayout">
-		<put-attribute name="body" value="/views/board/view.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/views/board/view.jsp"/>
 	</definition>
 	<definition name="sum" extends="baseLayout">
-		<put-attribute name="body" value="/views/angular/sum.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/views/angular/sum.jsp"/>
 	</definition>
 </tiles-definitions>
