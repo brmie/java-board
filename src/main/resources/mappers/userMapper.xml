@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.board.practice.mapper.userMapper">
+
+	<insert id="insertUser">
+		INSERT INTO usertable(
+			username, userid, userpw, joindate, authority
+		) VALUES(
+			#{username}, #{userid}, #{userpw}, NOW()
+		)
+	</insert>
+	
+	<select id="listUser" resultType="UserVO">
+		SELECT * FROM usertable
+			ORDER BY uno DESC
+	</select>
+	
+	<select id="selectUser" resultType="UserVO">
+		SELECT * FROM usertable
+			WHERE uno = #{uno}
+	</select>
+	
+	<select id="maxUno" resultType="Integer">
+		SELECT MAX(uno) from usertable
+	</select>
+	
+	<select id="minUno" resultType="Integer">
+		SELECT MIN(uno) from usertable
+	</select>
+	
+	<delete id="deleteUser">
+		DELETE FROM usertable WHERE uno=#{uno}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

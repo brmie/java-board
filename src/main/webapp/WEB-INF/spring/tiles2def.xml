@@ -13,19 +13,29 @@
 	<definition name="main" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
 	</definition>
+	
 	<definition name="insertForm" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/board/write.jsp"/>
 	</definition>
-	<definition name="list" extends="baseLayout">
+	<definition name="boardList" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/board/list.jsp"/>
 	</definition>
-	<definition name="view" extends="baseLayout">
+	<definition name="boardView" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/board/view.jsp"/>
 	</definition>
+	
 	<definition name="sum" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/angular/sum.jsp"/>
 	</definition>
+	
 	<definition name="login" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+	</definition>
+	
+	<definition name="signIn" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/signin.jsp"/>
+	</definition>
+	<definition name="userList" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/user/userList.jsp"/>
 	</definition>
 </tiles-definitions>

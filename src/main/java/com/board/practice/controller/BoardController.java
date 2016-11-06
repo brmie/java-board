@@ -25,7 +25,7 @@ public class BoardController {
 		List<BoardVO> list = new ArrayList<BoardVO>();
 		list = service.listBoard();
 		model.addAttribute("boards", list);
-		return "list";
+		return "boardList";
 	}
 	
 	@RequestMapping(value="/write", method=RequestMethod.GET)
@@ -44,7 +44,7 @@ public class BoardController {
 		model.addAttribute("board", service.selectBoard(bno));
 		model.addAttribute("minBno", service.minBno());
 		model.addAttribute("maxBno", service.maxBno());
-		return "view";
+		return "boardView";
 	}
 	
 	@RequestMapping(value="/delete/{bno}")
