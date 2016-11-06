@@ -13,13 +13,17 @@
     Hello 
     <c:choose><c:when test="${pageContext.request.remoteUser != null}">
     ${pageContext.request.remoteUser}</c:when>
-    <c:otherwise>Stranger</c:otherwise>
+    <c:otherwise>Stranger
+    	<a href="/login">로그인</a>
+    </c:otherwise>
     </c:choose>
     !!
   </p>
   
-  <form class="form-inline" action="/logout" method="post">
-    <input type="submit" value="Log out" />
-    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-  </form>
+   <c:if test="${pageContext.request.remoteUser != null}">
+	  <form class="form-inline" action="/logout" method="post">
+	    <input type="submit" value="Log out" />
+	    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+	  </form>
+  </c:if>
 </div>
