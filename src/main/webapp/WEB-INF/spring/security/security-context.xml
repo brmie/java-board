@@ -26,8 +26,8 @@
 
 	<jdbc-user-service data-source-ref="dataSource"
 						id="userService"
-						users-by-username-query="SELECT userId, userPw, enabled​ FROM usertable WHERE userId=?"
-						authorities-by-username-query="SELECT userId, authority FROM usertable WHERE userId=?"/>
+						users-by-username-query="SELECT userId, userPw, usertable.enabled FROM usertable WHERE userId=?"
+						authorities-by-username-query="SELECT userId, usertable.authority FROM usertable WHERE userId=?"/>
 	 
 	<authentication-manager>
 	 <authentication-provider user-service-ref="userService">
