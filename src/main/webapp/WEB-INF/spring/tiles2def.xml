@@ -25,4 +25,7 @@
 	<definition name="sum" extends="baseLayout">
 		<put-attribute name="body" value="/WEB-INF/views/angular/sum.jsp"/>
 	</definition>
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+	</definition>
 </tiles-definitions>

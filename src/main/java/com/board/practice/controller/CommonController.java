@@ -15,7 +15,7 @@ public class CommonController {
 	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String admin(Locale locale){
-		return "main";
+		return "login";
 	}
 	
 	@RequestMapping(value="/main", method=RequestMethod.POST)
