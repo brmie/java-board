@@ -7,7 +7,7 @@
 
 	<insert id="insertUser">
 		INSERT INTO usertable(
-			username, userid, userpw, joindate, authority
+			username, userid, userpw, joindate
 		) VALUES(
 			#{username}, #{userid}, #{userpw}, NOW()
 		)
